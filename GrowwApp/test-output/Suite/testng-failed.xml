@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test.pacakage.test">
+        <methods>
+          <include name="ObjectCreation"/>
+          <include name="openGrowAppHomePage"/>
+          <include name="LaunchBrowse"/>
+          <include name="verifyLogin"/>
+          <include name="CleanObject"/>
+          <include name="closeBrowser"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- test.pacakage.test -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="test.pacakage.test">
+        <methods>
+          <include name="ObjectCreation"/>
+          <include name="openGrowAppHomePage"/>
+          <include name="LaunchBrowse"/>
+          <include name="verifyLogin"/>
+          <include name="CleanObject"/>
+          <include name="closeBrowser"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- test.pacakage.test -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
